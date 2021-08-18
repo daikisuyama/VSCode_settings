@@ -1,0 +1,90 @@
+{
+    //---workbench settings---
+    //全体のテーマをSolarized Darkに
+    "workbench.colorTheme": "Solarized Dark",
+    //エディタの開始時にUntitleのファイルを作成
+    "workbench.startupEditor": "newUntitledFile",
+    //ファイルのアイコンをmaterial-icon-themeに
+    "workbench.iconTheme": "material-icon-theme",
+    //エクスプローラーからタブでファイルを開く
+    "workbench.editor.enablePreview": false,
+
+    //---editor settings---
+    //タブによる補完を有効に
+    "editor.tabCompletion": "on",
+    //タブストップ中も補完を有効に
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    //画面の端で折り返し
+    "editor.wordWrap": "on",
+    //ミニマップを表示しない
+    "editor.minimap.enabled": false,
+    //サジェスト一覧の中で一番上を常に選択
+    "editor.suggestSelection": "first",
+
+    //---exploer settings---
+    //エクスプローラでファイルを移動可能に
+    "explorer.confirmDragAndDrop": false,
+    //エクスプローラでファイルを削除可能に
+    "explorer.confirmDelete": false,
+
+    //----latex settings----
+    //viewerをタブで開く
+    "latex-workshop.view.pdf.viewer": "tab",
+    //補完を有効にする
+    "latex-workshop.intellisense.package.enabled": true,
+    //生成ファイルをlatex_outに格納する
+    "latex-workshop.latex.outDir": "latex_out",
+    //保存時に自動でビルドを開始する
+    "latex-workshop.latex.autoBuild.run":"onSave",
+    //コンパイル終了時に指定した生成ファイルを削除する
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    //削除したいファイル
+    "latex-workshop.latex.clean.fileTypes": [],
+    //ビルド時の動作
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": ["latexmk"]
+        },
+    ],
+    //ビルド時のコマンド
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": ["-outdir=%OUTDIR%","%DOC%.tex"]
+        },
+    ],
+
+    //----python settings----
+    //デフォルトのPythonのパスを/usr/local/bin/python3にする
+    "python.defaultInterpreterPath": "/usr/local/bin/python3",
+    //Pythonの言語サーバーをPylanceにする
+    "python.languageServer": "Pylance",
+
+    //----c++ settings----
+    "C_Cpp.default.macFrameworkPath":[
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+    ],
+    "C_Cpp.default.compilerPath": "/usr/local/bin/g++",
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+
+    //----terminal settings----
+    //VSCodeのキーバインドではなくターミナルのキーバインドを使用する
+    "terminal.integrated.allowChords": false,
+    //ターミナルで使用するPATHを使う
+    "terminal.integrated.env.osx": {
+        "PATH": "${env:PATH}"
+    },
+
+    //----other settings----
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+}
