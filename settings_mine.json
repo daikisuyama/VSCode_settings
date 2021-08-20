@@ -10,7 +10,7 @@
     "workbench.editor.enablePreview": false,
 
     //---editor settings---
-    //タブによる補完を有効に
+    //タブによる補完からの挿入を有効に
     "editor.tabCompletion": "on",
     //タブストップ中も補完を有効に
     "editor.suggest.snippetsPreventQuickSuggestions": false,
@@ -22,9 +22,9 @@
     "editor.suggestSelection": "first",
 
     //---exploer settings---
-    //エクスプローラでファイルを移動可能に
+    //エクスプローラでダイアログなしでファイルを移動可能に
     "explorer.confirmDragAndDrop": false,
-    //エクスプローラでファイルを削除可能に
+    //エクスプローラでダイアログなしで削除可能に
     "explorer.confirmDelete": false,
 
     //----latex settings----
