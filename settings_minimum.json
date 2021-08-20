@@ -1,0 +1,17 @@
+{
+    //---workbench settings---
+    //全体のテーマをSolarized Darkに
+    "workbench.colorTheme": "Solarized Dark",
+
+    //---editor settings---
+    //タブによる補完からの挿入を有効に
+    "editor.tabCompletion": "on",
+    //画面の端で折り返し
+    "editor.wordWrap": "on",
+
+    //---exploer settings---
+    //エクスプローラでダイアログなしでファイルを移動可能に
+    "explorer.confirmDragAndDrop": false,
+    //エクスプローラでダイアログなしで削除可能に
+    "explorer.confirmDelete": false,
+}
