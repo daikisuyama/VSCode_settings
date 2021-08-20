@@ -13,5 +13,5 @@
     //エクスプローラでダイアログなしでファイルを移動可能に
     "explorer.confirmDragAndDrop": false,
     //エクスプローラでダイアログなしで削除可能に
-    "explorer.confirmDelete": false,
+    "explorer.confirmDelete": false
 }
